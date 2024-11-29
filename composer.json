@@ -1,0 +1,17 @@
+{
+    "name": "brds/macros",
+    "description": "Auxiliary macros for work",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Brds\\Macros\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Georgiy Malahov",
+            "email": "stepllerrus78@gmail.com"
+        }
+    ],
+    "require": {}
+}
