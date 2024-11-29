@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace Brds\LaravelMacros\Providers;
 
-use Illuminate\Support\Collection;
+use Brds\LaravelMacros\Macros\CollectionMacros;
 use Illuminate\Support\ServiceProvider;
 
 class BrdsMacrosServiceProvider extends ServiceProvider {
@@ -17,14 +17,6 @@ class BrdsMacrosServiceProvider extends ServiceProvider {
      * Bootstrap any application services.
      */
     public function boot(): void {
-        Collection::macro('recursive', function () {
-            return $this->map(function ($value) {
-                if (is_array($value) || is_object($value)) {
-                    return collect($value)->recursive();
-                }
-
-                return $value;
-            });
-        });
+        new CollectionMacros();
     }
 }

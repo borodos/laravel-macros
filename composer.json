@@ -1,17 +1,23 @@
 {
-    "name": "brds/macros",
-    "description": "Auxiliary macros for work",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Brds\\Macros\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Georgiy Malahov",
-            "email": "stepllerrus78@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "brds/laravel-macros",
+  "description": "Auxiliary macros for work",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Brds\\LaravelMacros\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Georgiy Malahov",
+      "email": "stepllerrus78@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.2|^8.3",
+    "laravel/framework": "^11.9",
+    "laravel/sanctum": "^4.0",
+    "laravel/tinker": "^2.9"
+  }
 }
