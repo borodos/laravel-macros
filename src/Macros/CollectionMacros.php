@@ -11,7 +11,6 @@ class CollectionMacros {
                 if (is_array($value) || is_object($value)) {
                     return collect($value)->recursive();
                 }
-
                 return $value;
             });
         });
